@@ -112,8 +112,8 @@ body {
 .heading{
     width: 1400px;
     display: flex;
-    margin-bottom: 25px;
-    margin-top: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     flex-direction: row;
     justify-content: center;
 }
@@ -125,15 +125,20 @@ body {
 }
 
 .contact_form {
+
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    /* align-items: center; */
+    padding-top: 50px;
 }
 .full_name{
-position: absolute;
+/* position: absolute; */
+display: flex;
+flex-direction: column;
 width: 650px;
 height: 79px;
-top: 450px;
+/* top: 450px; */
 }
 
 .fn_box {
@@ -145,8 +150,23 @@ margin-top: 6px;
 background: rgba(255,255,255,0.5);
 
 }
+/* 
+.s&p{
+    display:flex;
+
+} */
+.outer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: stretch; */
+    padding-top: 12px;
+}
+
 .school_name{
-    position: absolute;
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
     width: 300px;
     height: 79px;
     top: 550px;
@@ -164,7 +184,9 @@ background: rgba(255,255,255,0.5);
     }
 
 .phone{
-    position: absolute;
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
     width: 300px;
     height: 79px;
     top: 550px;
@@ -182,15 +204,18 @@ background: rgba(255,255,255,0.5);
     }
 
 .message{
-    position: absolute;
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
     width: 650px;
-    height: 79px;
-    top: 650px;
+    height: 200px;
+    /* top: 650px; */
+    padding-top: 12px;
     }
         
 .message_box {
     width: 100%; 
-
+    height: 120px;
     padding: 15px; 
     border: 1px solid white;
     border-radius: 4px;
@@ -212,9 +237,17 @@ font-size: 21px;
     border: 1px solid white;
 }
 
-
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 12px;
+}
 .submit_button{
-    top: 100px;
+    /* top: 100px; */
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center; */
     font-size: 17px;
     font-family: 'Playfair', sans-serif;
     background: none;
