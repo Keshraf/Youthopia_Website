@@ -24,25 +24,28 @@
             
     <form class = "contact_form">
         <div class = "full_name">
-            <label class = "input_label">Full name</label>
+            <label class = "input_label" for="name">Full name</label>
             <input type="text" id="name" class = "fn_box">
         </div>
+        <div class="outer">
         <div class = "school_name">
-            <label class = "input_label">School name</label>
-            <input type="text" id="name" class = "sn_box">
+            <label class = "input_label" for="school">School name</label>
+            <input type="text" id="school" class = "sn_box">
         </div>
-        <div class = "phone">
-            <label class = "input_label">Phone number</label>
-            <input type="text" id="name" class = "p_box">
+            <div class = "phone">
+                <label class = "input_label" for="phone">Phone number</label>
+                <input type="text" id="phone" class = "p_box">
+            </div>
         </div>
         <div class = "message">
-            <label class = "input_label">Message</label>
-            <input type="text" id="name" class = "message_box">
+            <label class = "input_label" for="message">Message</label>
+            <input type="text" id="message" class = "message_box">
         </div>
-
-        <button type="submit" class = "submit_button">
-            SUBMIT
-        </button>
+        <div class="button">
+            <button type="submit" class = "submit_button">
+                SUBMIT
+            </button>
+        </div>
 
     </form>
     </body>
