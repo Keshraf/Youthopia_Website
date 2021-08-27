@@ -49,23 +49,6 @@ table {
 }
 /*IGNORE ABOVE CODE*/
 
-/* html, body {
-    width: 100%;
-    height:100%;
-  }
-   */
-  
-  /* @keyframes gradient {
-      0% {
-          background-position: 0% 50%;
-      }
-      50% {
-          background-position: 100% 50%;
-      }
-      100% {
-          background-position: 0% 50%;
-      }
-  } */
 /* Adding TW Cent MT */
 @font-face{
     font-family: 'TW Cen MT';
@@ -81,20 +64,15 @@ table {
 
 
 body{
-    width: 100%;
-    height: auto;
-     /* background: url(bg4.jpg); */
-     background: url(bg7.png);
-     /* background: url(SPONSOR.png); */
-     background-repeat: no-repeat;
-     /* overflow-x: hidden; */
-     background-size: cover;
-     /* background-attachment: fixed; */
+     background-attachment: fixed;
+     background: linear-gradient(181.35deg, #24344B 0.75%, #3F2F40 64.61%, #1D1324 99.2%);
      color: white;
      display: flex;
 	 flex-direction: column;
 	 justify-content: center;
 	 align-items: center;
+     --shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(94, 69, 85, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+     transition: 1s ease-in 0.5s ;;
      
 }
 
@@ -138,6 +116,8 @@ body{
     height: auto;
     display: flex;
     margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -148,12 +128,20 @@ body{
     font-family: 'Raleway', sans-serif;
     font-size: 150px;
     letter-spacing: 5%;
-    text-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(94, 69, 85, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: var(--shadow);
     /* transition: 0.2s ease-in 0.5s ; */
 }
 
+hr{
+    width: 85%;
+    height: 0px;
+    border-style: solid;
+}
+
 .below{
-    width: 80%;
+    width: 85%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -164,10 +152,11 @@ body{
 
 
 .row{
-    margin: 1% auto 3% auto;
+    margin: 1% auto 2% auto;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
     width:100%;
     height: auto;
 }
@@ -176,19 +165,75 @@ body{
 img{
     max-width: 90%;
     height: auto;
-    /* border: 2px solid white; */
-    /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
-    /* box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;  */
-    /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;*/
-    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset; */
-    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(94, 69, 85, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    /* box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(94, 69, 85, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px; */
+    box-shadow: var(--shadow);
     transition: 1s ease-in 0.5s ;
-    animation-iteration-count: infinite;
+    
     
 }
 
+
+
 img:hover{
-    transition: 0.2s linear ;
-    box-shadow: rgba(240, 46, 170, 0.4) 2.5px 2.5px, rgba(240, 46, 170, 0.3) 5px 5px, rgba(240, 46, 170, 0.2) 7.5px 7.5px, rgba(240, 46, 170, 0.1) 10px 10px, rgba(240, 46, 170, 0.05) 12.5px 12.5px;
+    transition: 0.2s linear 0.5s;
+    box-shadow: rgba(240, 46, 170, 0.4) 1px 1px, rgba(240, 46, 170, 0.3) 2.5px 2.5px, rgba(240, 46, 170, 0.2) 5px 5px, rgba(240, 46, 170, 0.1) 7.5px 7.5px, rgba(240, 46, 170, 0.05) 10px 10px;
     
 }
+
+.eight{
+    margin-bottom: 100px;
+}
+
+
+/*MEDIA QUERIES*/
+@media screen and (max-width:800px) {
+    .main-nav{
+        visibility: hidden;
+    }
+    
+    .h1{
+        font-size: 120px;
+    }
+    
+}
+
+@media screen and (max-width:650px) {
+    
+    .h1{
+        font-size: 100px;
+    }
+    
+}
+
+@media screen and (max-width:550px) {
+    
+    .h1{
+        font-size: 100px;
+    }
+    .row{
+        flex-direction: column;
+        margin: 0px;
+    }
+    .img-box{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 20px auto 20px auto;
+    }
+    img{
+        max-width: 60%;
+        margin: 0px;
+    }
+    
+}
+
+@media screen and (max-width:400px) {
+    
+    .h1{
+        font-size: 80px;
+    }
+}
+
+
+
