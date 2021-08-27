@@ -62,12 +62,14 @@ table {
     display: none;
 }
 
+html{
+		overflow-x:hidden ;
+}
 
 body{
      background-attachment: fixed;
      background: linear-gradient(181.35deg, #24344B 0.75%, #3F2F40 64.61%, #1D1324 99.2%);
      color: white;
-	overflow-x:hidden ;
      display: flex;
 	 flex-direction: column;
 	 justify-content: center;
