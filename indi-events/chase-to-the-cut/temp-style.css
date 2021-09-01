@@ -296,6 +296,10 @@ p{
     text-align: left;   
     line-height: 20px;
 }
+.under-day{
+    width: 100%;
+    margin-bottom: 20px;
+}
 
 /*MEDIA QUERIES*/
 @media screen and (max-width:1000px) {
