@@ -297,11 +297,10 @@ p{
     line-height: 20px;
 }
 
-hr{
+.under-day{
     margin-bottom: 20px;
     width: 100%;
 }
-
 /*MEDIA QUERIES*/
 @media screen and (max-width:1000px) {
     .main-nav{
