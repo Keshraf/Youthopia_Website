@@ -181,6 +181,14 @@ img{
     background:rgba(240, 46, 170, 0.4);
 }
 
+.anchor-img{
+	width:100%;
+	height:auto;
+	display:flex;
+	flex-direction:row;
+	justify-content: center;
+	align-items: center;
+}
 
 img:hover{
     transition: 0.2s linear 0.1s;
