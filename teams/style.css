@@ -1,0 +1,610 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Montserrat', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*IGNORE ABOVE CODE*/
+
+/* Adding TW Cent MT */
+@font-face{
+    font-family: 'TW Cen MT';
+    src:url("Tw Cen MT.ttf");
+    font-style: normal;
+    font-weight: 100;
+
+}
+/* Removing scroll bar */
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+body{
+    background-image: url(bgt.png);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    
+    
+}
+
+.above{
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.main-nav{
+   margin: 45px auto 100px auto;
+   width: 60%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   
+}
+.main-nav-list{
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+}
+
+.main-nav-item{
+    display: flex;
+    flex: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   font-size: 18px;
+   font-family: 'TW Cen MT';
+   font-style: normal;
+   font-weight: 100;
+   letter-spacing: 3px;
+   margin: 15px 15px;
+   text-align: center !important;
+   /* padding-right: 15px; */
+   padding: 15px;
+}
+
+.btn{
+    position: relative;	
+    transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
+	user-select: none;
+}
+
+.btn:before, .btn:after {
+	content: '';
+	position: absolute;	
+	transition: inherit;
+	z-index: -1;
+}
+
+.btn:hover {
+	color: #14213D;
+	transition-delay: .5s;
+}
+
+.btn:hover:before {
+	transition-delay: 0s;
+}
+
+.btn:hover:after {
+	background: #fff;
+	transition-delay: .35s;
+}
+
+.from-top:before, 
+.from-top:after {
+	left: 0;
+	height: 0;
+	width: 100%;
+}
+
+.from-top:before {
+	bottom: 0;	
+	border: 1px solid  #fff;
+	border-top: 0;
+	border-bottom: 0;
+}
+
+.from-top:after {
+	top: 0;
+	height: 0;
+    /* right: 1; */
+}
+
+.from-top:hover:before,
+.from-top:hover:after {
+	height: 100%;
+}
+
+.heading{
+   width: 100%;
+   height: auto;
+   display: flex;
+   margin-bottom: 60px;
+   margin-left: auto;
+   margin-right: auto;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+hr{
+    width: 75% !important; 
+}
+
+.h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 150px;
+    letter-spacing: 5%;
+}
+
+.sub-nav{
+    width: 100%;
+    height: auto;
+    /* margin: 45px auto 100px auto; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow-x: scroll;
+}
+
+.sub-nav-list{
+    font-size: 18px;
+    width: 70%;
+    margin: 30px auto;  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.sub-nav-item{
+    width: 100%;
+    letter-spacing: 3px;
+    margin: auto 10px;
+    text-align: center;
+    padding: 15px;
+}
+
+.from-center:before {
+	top: 0;
+	left: 50%;
+	height: 100%;
+	width: 0;
+	border: 1px solid #fff;
+	border-left: 0;
+	border-right: 0;
+}
+
+.from-center:after {
+	bottom: 0;
+	left: 0;
+	height: 0;
+	width: 100%;
+	background: #fff;
+}
+
+.from-center:hover:before {
+	left: 0;
+	width: 100%;
+}
+
+.from-center:hover:after {
+	top: 0;
+	height: 100%;
+}
+
+.teachers-container{
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.core-container{
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.department-container .name{
+    margin:15px 10px 5px 10px;
+}
+.web-container{
+    width: 90%;
+}
+.web-container .name{
+    margin:15px 50px 15px 50px;
+}
+
+.tech-container{
+    width: 90%;
+}
+.tech-container .name{
+    margin:15px 50px 15px 50px;
+}
+
+hr{
+    width: 100%;
+    /*border-top: 10px;*/
+}
+.subheading{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Raleway';
+    margin: 25px auto;
+}
+
+.row{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.outer-box{
+    width: 20%;
+    height:auto;
+    margin: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: rgba(255,255,255, 0.1);
+}
+.image-box{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    margin: 20px auto 10px auto;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+.visible{
+    display: none;
+}
+
+.name{
+    margin-top: 4px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.desig{
+    font-family:'Tw Cent MT';
+    margin: 5px auto 10px auto;
+    font-size: 14px;
+    color:#14213D;
+    letter-spacing: 3px;
+    font-family: 'TW Cen MT';
+    font-style: normal;
+    font-weight: 100;
+}
+.event-container .outer-box{
+    width: 90%;
+}
+.event-p{
+    width: 100% !important;
+    height: auto;
+    text-align: center;
+    padding: 35px 35px;
+    line-height: 40px;
+}
+
+
+/*START OF MEDIA QUERY*/
+
+@media screen and (max-width:1050px) {
+    .main-nav{
+        visibility: hidden;
+        display: none !important;
+    }
+    
+    .h1{
+        font-size: 100px;
+        margin-top: 50px;
+    }
+    .sub-nav-list{
+        font-size: 12px;
+        margin:15px auto;
+    }
+    .subheading{
+        font-size: 30px;
+        margin:20px auto;
+    }
+    .name{
+        font-size: 12px;
+    }
+    .desig{
+        font-size: 10px;
+    }
+    
+    
+    
+}
+
+@media screen and (max-width:850px) {
+    
+    .h1{
+        font-size: 90px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .sub-nav-list{
+        flex-direction: column;
+    }
+    .outer-box{
+        width: 50%;
+    }
+    .name{
+        font-size: 18px;
+    }
+    .desig{
+        font-size: 12px;
+    }
+    
+        
+    
+}
+
+@media screen and (max-width:500px) {
+    
+    .h1{
+        font-size: 70px;
+    }
+    .outer-box{
+        width: 65%;
+        margin:10px;
+    }
+    .name{
+        font-size: 15px;
+    }
+    .desig{
+        font-size: 10px;
+    }
+}
+
+
+/*SIDE_NAV*/
+
+@media screen and (max-width:1000px){
+    /*SIDE_NAV*/
+    .side-nav{
+        visibility: visible !important;
+    }
+}
+    
+
+
+.side-nav{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    visibility: hidden;
+    z-index: 1 !important;    
+}
+
+.but-nav{
+    width: 100%;
+    height: auto   ;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+    border-style: none;  
+    /* font-size: 150px;  */
+    cursor: pointer;  
+}
+
+.material-icons{
+    font-size: 35px !important;
+}
+.nav2-column{
+    visibility: visible !important;
+    z-index: 3 !important;
+}
+.side-nav-list{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin: 60px auto;
+}
+
+.close-nav{
+    color: white;
+    cursor: pointer;
+}
+
+.overlay{
+    visibility: hidden;
+}
+
+.overlay2{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    visibility: visible;
+    z-index: 2 !important;
+    cursor: pointer;
+}
+
+.nav-hr{
+    width: 60% !important;
+    margin: 5px auto !important;
+}
+
+.li-side{
+    width: 50%;
+    font-size: 15px;
+    margin: 5px auto;
+    padding: 15px 15px;
+
+}
+.nav-column{
+    /* padding: 10px; */
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    visibility: hidden;
+}
+
+/*SIDE_NAV_END*/
+
+
+/*FOOTER*/
+.footer-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 20px ;
+}
+.footer{
+    width: 62%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent
+}
+.creds{
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start !important;
+}
+.social{
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+#footer-h2{
+    font-family: 'TW Cen Mt';
+    font-size: 15px;
+    letter-spacing: 5px;
+    text-align: center;
+    /* color: white; */
+    text-decoration: none !important;
+    font-weight: 100;
+    padding: 5px 15px;
+    margin: 20px auto;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+i{
+    color: white;
+}
+/*FOOTER_END*/
+
