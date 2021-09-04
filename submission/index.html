@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youthopia'21 - Submission</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!--NEW ADDED-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0d4a4744bb.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://keshraf.github.io/Resources/A0%20(1)%20(1).png">
+    <!--TILL HERE-->
+    
+</head>
+<body>
+    <main class="above">
+        <nav class="main-nav">
+            <ul class="main-nav-list">
+                <a href="template.html"><li class="main-nav-item btn from-top">HOME</li></a>
+                <a href="submission\index.html"><li class="main-nav-item btn from-top">SUBMISSION</li></a>
+                <a href=""><li class="main-nav-item btn from-top">TEAMS</li></a>
+                <a href="events\index.html"><li class="main-nav-item btn from-top">EVENT</li></a>
+                <a href="sponsors\index.html"><li class="main-nav-item btn from-top">SPONSORS</li></a>
+                <a href=""><li class="main-nav-item btn from-top">LIVE</li></a>
+                <a href=""><li class="main-nav-item btn from-top">CONTACT</li></a>
+            </ul>
+        </nav>
+        <hr class="first-hr">
+        <section class="heading">
+            <h1 class="h1">SUBMISSION</h1>
+        </section>
+        <hr>
+    </main>
+    <main class="bottom">
+        <form action="a" id="form-submit">
+        <div class="drop-down-container">
+            <div class="sub-heading-container">
+                <h2 class="sub-heading">Event</h2>
+            </div>
+            <select name="events" id="events" onchange="link(this.value)">
+                <!-- <option value="select">Select</option> -->
+                <option disabled selected></option>
+                <option value="fashion_show">Fashion Show</option>
+                <option value="western_dance">Western Dance</option>
+                <option value="stand_up_comedy">Stand-up Comedy</option>
+                <option value="photography">Photography</option>
+                <option value="short_film">Short Film</option>
+                <option value="creative_writing">Creative Writing </option>
+                <option value="slam_poetry">Slam Poetry</option>
+                <option value="war_of_rjs">War of RJs</option>
+                <option value="western_music">Western Music</option>
+                <option value="martial_arts">Martial Arts</option>
+                <option value="cake_art">Cake art </option>
+                <option value="comic_strip">Comic Strip </option>
+                <option value="talent_show">Talent Show</option>
+                <option value="face_painting">Face Painting</option>
+                <option value="eastern_dance">Eastern Dance</option>
+                <option value="eastern_music">Eastern Music</option>
+                <option value="digital_art">Digital Art</option><option value="joint_venture">Joint Venture</option>
+                <option value="shark_tank">Shark Tank</option>
+                <option value="football">Football</option>
+                <option value="basketball">Basketball</option>
+            </select>
+        </div>
+        <div class="button-container">
+            <button type="submit" id="submit" >SUBMIT</button> 
+        </div>
+        </form>
+        <!--New Added-->
+    <nav class="side-nav">
+        <div class="overlay"></div>
+        <button class="but-nav">
+            <i class="material-icons">menu</i>
+        </button>
+        <div class="nav-column">
+            <ul class="side-nav-list">
+                <li><i class="material-icons close-nav">close</i></li><hr class="nav-hr">
+                <a href="template.html"><li class="li-side btn from-top">HOME</li></a><hr class="nav-hr">
+                <a href="submission\index.html"><li class="li-side btn from-top">SUBMISSION</li></a><hr class="nav-hr">
+                <a href=""><li class="li-side btn from-top">TEAMS</li></a><hr class="nav-hr">
+                <a href="events\index.html"><li class="li-side btn from-top">EVENT</li></a><hr class="nav-hr">
+                <a href="sponsors\index.html"><li class="li-side btn from-top">SPONSORS</li></a><hr class="nav-hr">
+                <a href=""><li class="li-side btn from-top">LIVE</li></a><hr class="nav-hr">
+                <a href=""><li class="li-side btn from-top">CONTACT</li></a><hr class="nav-hr">
+            </ul>
+        </div>
+    </nav>
+        <footer class="footer-container">
+            <div class="footer">
+            <div class="creds">
+                <a href="https://keshraf.github.io/Web_Dev_Team/"><h2 id="footer-h2" class="btn from-top">MADE BY THE WEB DEV TEAM</h2></a>
+            </div>
+            <div class="social">
+                <a href="https://play.google.com/store/apps/details?id=com.ths.youthopia21"><i class="fab fa-google-play"></i></a>
+                <a href="https://www.instagram.com/youthopia2021/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="app.js"></script>
+    <!--TILL HERE-->
+</body>
+</html>
