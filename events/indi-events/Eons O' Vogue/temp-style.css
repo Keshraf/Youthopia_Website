@@ -136,7 +136,7 @@ body{
     flex: row;
     justify-content: center;
     align-items: center;
-    width: 20%;
+    width: 100%;
    font-size: 18px;
    font-family: 'TW Cen MT';
    font-style: normal;
