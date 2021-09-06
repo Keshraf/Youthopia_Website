@@ -315,6 +315,12 @@ hr{
     align-items: center;
     background-color: rgba(255,255,255, 0.1);
 }
+
+#department .outer-box{
+	width: 30%;
+	margin: 26px;
+}
+
 .image-box{
     width: 80%;
     height: auto;
