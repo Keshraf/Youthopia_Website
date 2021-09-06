@@ -271,6 +271,7 @@ hr{
 
 .department-container .name{
     margin:15px 10px 5px 10px;
+	font-size: 16px;
 }
 .web-container{
     width: 90%;
@@ -352,16 +353,12 @@ img{
     text-align: center;
 }
 
-#department .name{
-	font-size:18px;
-}
+
 #long{
 	font-size: 16px;	
 }
 
-#department #long{
-	font-size: 14px;
-}
+
 .desig{
     font-family:'Tw Cent MT';
     margin: 5px auto 10px auto;
@@ -371,7 +368,7 @@ img{
     font-family: 'TW Cen MT';
     font-style: normal;
     font-weight: 100;
-	
+	text-align: center;
 }
 
 .desig #{
@@ -432,7 +429,7 @@ img{
         flex-direction: column;
     }
     .outer-box{
-        width: 70%;
+        width: 50%;
     }
     .name{
         font-size: 18px;
