@@ -412,7 +412,12 @@ img{
     .desig{
         font-size: 10px;
     }
-    
+    #executive .name{
+		font-size: 8px;
+	}
+	#event .name{
+		font=size: 8px;
+	}
     	
     
 }
@@ -457,12 +462,7 @@ img{
     .desig{
         font-size: 10px;
     }
-	#executive .name{
-		font-size: 10px;
-	}
-	#event .name{
-		font=size: 10px;
-	}
+	
 }
 
 
