@@ -321,15 +321,10 @@ hr{
 	width: 70%;
 }
 
-/*#department .outer-box{
-	width: 40%;
-	margin: 26px;
+.tech-container{
+	width: 70%;
 }
-*/
-#tech .outer-box{
-	width: 40%;
-	margin: 26px;	
-}
+
 .image-box{
     width: 80%;
     height: auto;
