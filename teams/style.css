@@ -326,7 +326,10 @@ hr{
 	margin: 26px;
 }
 
-
+#tech .outer-box{
+	width: 40%;
+	margin: 26px;	
+}
 .image-box{
     width: 80%;
     height: auto;
