@@ -342,6 +342,9 @@ img{
     text-align: center;
 }
 
+#hriday{
+	font-size: 15px;	
+}
 .desig{
     font-family:'Tw Cent MT';
     margin: 5px auto 10px auto;
@@ -351,6 +354,7 @@ img{
     font-family: 'TW Cen MT';
     font-style: normal;
     font-weight: 100;
+	text-align: center;
 }
 .event-container .outer-box{
     width: 90%;
