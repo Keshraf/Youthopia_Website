@@ -220,7 +220,7 @@ body{
 .info-container{
     width: 70%;
     height: auto;
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
@@ -230,7 +230,7 @@ body{
 .sponsor-box{
     width: 100%;
     height: auto;
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
@@ -239,6 +239,7 @@ body{
 #spon-img{
     width: 40%;
     height: auto;
+	display:block !important;
 }
 
 h3{
